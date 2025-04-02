@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Node Dashboard</title>
+    <!-- Use Google Fonts instead of Adobe Typekit -->
+    <link href="https://fonts.googleapis.com/css2?family=Space+Mono:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+    <!-- Globe.gl library from jsDelivr CDN -->
+    <script src="https://cdn.jsdelivr.net/npm/globe.gl@2.28.4/dist/globe.gl.min.js"></script>
+    <!-- Feather Icons for navigation -->
+    <script src="https://cdn.jsdelivr.net/npm/feather-icons/dist/feather.min.js"></script>
+</head>
+<body>
+    <div class="app-container">
+        <!-- Navigation Bar -->
+        <nav class="navbar" id="navbar">
+            <div class="nav-container">
+                <div class="nav-logo-section">
+                    <a href="#" class="logo">
+                        <img src="images/logo.svg" alt="WebHash Logo" height="28">
+                    </a>
+                    <a href="#" class="mobile-logo">
+                        <img src="images/logo.svg" alt="WebHash Logo" height="24">
+                    </a>
+                </div>
+
+                <!-- <div class="nav-links">
+                    <a href="#" class="nav-button active">Home</a>
+                    <a href="#" class="nav-button">Master Plan</a>
+                    <a href="#" class="nav-button disabled">
+                        Ecosystem
+                        <i data-feather="lock" class="icon-lock"></i>
+                    </a>
+                </div> -->
+
+                <button class="mobile-menu-button" id="menuToggle">MENU</button>
+
+                <div class="nav-right">
+                    <a href="#" class="nav-button">
+                        Webhash Pro
+                        <i data-feather="arrow-up-right" class="icon-arrow"></i>
+                    </a>
+                    <a href="#" class="nav-button">
+                        No-Code Dev
+                        <i data-feather="arrow-up-right" class="icon-arrow"></i>
+                    </a>
+                </div>
+            </div>
+
+            <!-- Mobile Menu (hidden by default) -->
+            <div class="mobile-menu" id="mobileMenu">
+                <div class="mobile-menu-content">
+                    <!-- <a href="#" class="mobile-nav-button">
+                        Home
+                        <i data-feather="arrow-right" class="icon-arrow"></i>
+                    </a>
+                    <a href="#" class="mobile-nav-button">
+                        Master Plan
+                        <i data-feather="arrow-right" class="icon-arrow"></i>
+                    </a>
+                    <a href="#" class="mobile-nav-button disabled">
+                        Ecosystem
+                        <i data-feather="lock" class="icon-lock"></i>
+                    </a> -->
+                    <a href="#" class="mobile-nav-button">
+                        Webhash Pro
+                        <i data-feather="arrow-right" class="icon-arrow"></i>
+                    </a>
+                    <a href="#" class="mobile-nav-button">
+                        No-Code Dev
+                        <i data-feather="arrow-right" class="icon-arrow"></i>
+                    </a>
+                </div>
+            </div>
+        </nav>
+        
+        <div class="dashboard">
+            <!-- Top Stats Row -->
+            <div class="stats-container top-stats">
+                <div class="stat-card">
+                    <div class="stat-label">Sites Hosted</div>
+                    <div class="stat-value" id="active-users">0</div>
+                </div>
+                <div class="stat-card">
+                    <div class="stat-label">Active Nodes</div>
+                    <div class="stat-value" id="active-nodes">0</div>
+                </div>
+                <div class="stat-card">
+                    <div class="stat-label">Storage Consumed</div>
+                    <div class="stat-value" id="machines-onboarded">0</div>
+                </div>
+            </div>
+            
+            <!-- Globe Visualization -->
+            <div class="globe-container">
+                <div id="globeViz"></div>
+            </div>
+            
+            <!-- Bottom Stats -->
+            <div class="stats-container bottom-stats">
+                <div class="stat-card">
+                    <div class="stat-label">CPUs</div>
+                    <div class="stat-value" id="total-cpus">0</div>
+                </div>
+                <div class="stat-card">
+                    <div class="stat-label">Memory</div>
+                    <div class="stat-value" id="total-memory">0 GB</div>
+                </div>
+                <div class="stat-card">
+                    <div class="stat-label">Storage</div>
+                    <div class="stat-value" id="total-storage">0 GB</div>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <script src="js/app.js"></script>
+    <script>
+        // Initialize Feather icons
+        document.addEventListener('DOMContentLoaded', function() {
+            feather.replace();
+            
+            // Mobile menu toggle
+            const menuToggle = document.getElementById('menuToggle');
+            const mobileMenu = document.getElementById('mobileMenu');
+            const navbar = document.getElementById('navbar');
+            
+            menuToggle.addEventListener('click', function() {
+                mobileMenu.classList.toggle('active');
+                if (mobileMenu.classList.contains('active')) {
+                    menuToggle.innerHTML = '<i data-feather="x"></i>';
+                    document.body.style.overflow = 'hidden';
+                } else {
+                    menuToggle.textContent = 'MENU';
+                    document.body.style.overflow = '';
+                }
+                feather.replace();
+            });
+            
+            // Navbar scroll behavior
+            let lastScrollY = 0;
+            
+            window.addEventListener('scroll', function() {
+                const currentScrollY = window.scrollY;
+                
+                // Show/hide navbar based on scroll direction
+                if (currentScrollY > lastScrollY && currentScrollY > 50) {
+                    navbar.classList.add('navbar-hidden');
+                } else {
+                    navbar.classList.remove('navbar-hidden');
+                }
+                
+                // Add background when scrolling
+                if (currentScrollY > 10) {
+                    navbar.classList.add('navbar-scrolled');
+                } else {
+                    navbar.classList.remove('navbar-scrolled');
+                }
+                
+                lastScrollY = currentScrollY;
+            });
+        });
+    </script>
+</body>
+</html>

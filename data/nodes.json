@@ -1,0 +1,254 @@
+{
+  "nodes": [
+    {
+      "id": "node-001",
+      "ip": "203.0.113.1",
+      "latitude": 37.7749,
+      "longitude": -122.4194,
+      "status": "active",
+      "cpu": 16,
+      "memory": 64,
+      "storage": 1024
+    },
+    {
+      "id": "node-002",
+      "ip": "203.0.113.2",
+      "latitude": 40.7128,
+      "longitude": -74.0060,
+      "status": "active",
+      "cpu": 32,
+      "memory": 128,
+      "storage": 2048
+    },
+    {
+      "id": "node-003",
+      "ip": "203.0.113.3",
+      "latitude": 51.5074,
+      "longitude": -0.1278,
+      "status": "active",
+      "cpu": 8,
+      "memory": 32,
+      "storage": 512
+    },
+    {
+      "id": "node-004",
+      "ip": "203.0.113.4",
+      "latitude": 48.8566,
+      "longitude": 2.3522,
+      "status": "active",
+      "cpu": 24,
+      "memory": 96,
+      "storage": 1536
+    },
+    {
+      "id": "node-005",
+      "ip": "203.0.113.5",
+      "latitude": 35.6762,
+      "longitude": 139.6503,
+      "status": "active",
+      "cpu": 64,
+      "memory": 256,
+      "storage": 4096
+    },
+    {
+      "id": "node-006",
+      "ip": "203.0.113.6",
+      "latitude": -33.8688,
+      "longitude": 151.2093,
+      "status": "active",
+      "cpu": 16,
+      "memory": 64,
+      "storage": 1024
+    },
+    {
+      "id": "node-007",
+      "ip": "203.0.113.7",
+      "latitude": 19.4326,
+      "longitude": -99.1332,
+      "status": "active",
+      "cpu": 8,
+      "memory": 32,
+      "storage": 512
+    },
+    {
+      "id": "node-008",
+      "ip": "203.0.113.8",
+      "latitude": 55.7558,
+      "longitude": 37.6173,
+      "status": "active",
+      "cpu": 32,
+      "memory": 128,
+      "storage": 2048
+    },
+    {
+      "id": "node-009",
+      "ip": "203.0.113.9",
+      "latitude": 1.3521,
+      "longitude": 103.8198,
+      "status": "active",
+      "cpu": 48,
+      "memory": 192,
+      "storage": 3072
+    },
+    {
+      "id": "node-010",
+      "ip": "203.0.113.10",
+      "latitude": -23.5505,
+      "longitude": -46.6333,
+      "status": "active",
+      "cpu": 16,
+      "memory": 64,
+      "storage": 1024
+    },
+    {
+      "id": "node-011",
+      "ip": "203.0.113.11",
+      "latitude": 52.5200,
+      "longitude": 13.4050,
+      "status": "active",
+      "cpu": 24,
+      "memory": 96,
+      "storage": 1536
+    },
+    {
+      "id": "node-012",
+      "ip": "203.0.113.12",
+      "latitude": 25.2048,
+      "longitude": 55.2708,
+      "status": "active",
+      "cpu": 32,
+      "memory": 128,
+      "storage": 2048
+    },
+    {
+      "id": "node-013",
+      "ip": "203.0.113.13",
+      "latitude": 41.9028,
+      "longitude": 12.4964,
+      "status": "active",
+      "cpu": 8,
+      "memory": 32,
+      "storage": 512
+    },
+    {
+      "id": "node-014",
+      "ip": "203.0.113.14",
+      "latitude": 28.6139,
+      "longitude": 77.2090,
+      "status": "active",
+      "cpu": 64,
+      "memory": 256,
+      "storage": 4096
+    },
+    {
+      "id": "node-015",
+      "ip": "203.0.113.15",
+      "latitude": 39.9042,
+      "longitude": 116.4074,
+      "status": "active",
+      "cpu": 32,
+      "memory": 128,
+      "storage": 2048
+    },
+    {
+      "id": "node-016",
+      "ip": "203.0.113.16",
+      "latitude": -34.6037,
+      "longitude": -58.3816,
+      "status": "active",
+      "cpu": 16,
+      "memory": 64,
+      "storage": 1024
+    },
+    {
+      "id": "node-017",
+      "ip": "203.0.113.17",
+      "latitude": 59.3293,
+      "longitude": 18.0686,
+      "status": "active",
+      "cpu": 24,
+      "memory": 96,
+      "storage": 1536
+    },
+    {
+      "id": "node-018",
+      "ip": "203.0.113.18",
+      "latitude": 37.5665,
+      "longitude": 126.9780,
+      "status": "active",
+      "cpu": 48,
+      "memory": 192,
+      "storage": 3072
+    },
+    {
+      "id": "node-019",
+      "ip": "203.0.113.19",
+      "latitude": -33.4489,
+      "longitude": -70.6693,
+      "status": "active",
+      "cpu": 8,
+      "memory": 32,
+      "storage": 512
+    },
+    {
+      "id": "node-020",
+      "ip": "203.0.113.20",
+      "latitude": 45.4215,
+      "longitude": -75.6972,
+      "status": "active",
+      "cpu": 16,
+      "memory": 64,
+      "storage": 1024
+    },
+    {
+      "id": "node-021",
+      "ip": "203.0.113.21",
+      "latitude": 30.0444,
+      "longitude": 31.2357,
+      "status": "active",
+      "cpu": 32,
+      "memory": 128,
+      "storage": 2048
+    },
+    {
+      "id": "node-022",
+      "ip": "203.0.113.22",
+      "latitude": 13.7563,
+      "longitude": 100.5018,
+      "status": "active",
+      "cpu": 24,
+      "memory": 96,
+      "storage": 1536
+    },
+    {
+      "id": "node-023",
+      "ip": "203.0.113.23",
+      "latitude": 14.5995,
+      "longitude": 120.9842,
+      "status": "active",
+      "cpu": 8,
+      "memory": 32,
+      "storage": 512
+    },
+    {
+      "id": "node-024",
+      "ip": "203.0.113.24",
+      "latitude": 4.7109,
+      "longitude": -74.0721,
+      "status": "active",
+      "cpu": 16,
+      "memory": 64,
+      "storage": 1024
+    },
+    {
+      "id": "node-025",
+      "ip": "203.0.113.25",
+      "latitude": 52.3676,
+      "longitude": 4.9041,
+      "status": "active",
+      "cpu": 32,
+      "memory": 128,
+      "storage": 2048
+    }
+  ]
+}

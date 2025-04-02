@@ -1,0 +1,10 @@
+{
+  "totalCPUs": 6320,
+  "totalMemory": 16782,
+  "totalStorage": 409798,
+  "totalSitesHosted": 23600,
+  "storageConsumed": 31714,
+  "activeUsers": 704861,
+  "activeNodes": 945,
+  "machinesOnboarded": 88331
+}
