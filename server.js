@@ -16,7 +16,7 @@ app.use(express.static(path.join(__dirname, 'public')));
 app.get('/api/nodes', async (req, res) => {
   try {
     // Forward the request to the external API
-    const response = await axios.get('http://localhost:3001/api/nodes');
+    const response = await axios.get('http://localhost:3003/api/nodes');
     res.json(response.data);
   } catch (error) {
     console.error('Error fetching nodes data from external API:', error.message);
@@ -28,7 +28,7 @@ app.get('/api/nodes', async (req, res) => {
 app.get('/api/stats', async (req, res) => {
   try {
     // Get nodes data from the external API
-    const response = await axios.get('http://localhost:3001/api/nodes');
+    const response = await axios.get('http://localhost:3003/api/nodes');
     const nodesData = response.data.data;
     
     // Calculate stats from nodes data
