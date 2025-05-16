@@ -92,7 +92,7 @@ document.addEventListener('DOMContentLoaded', function() {
                 <div style="margin: 4px 0;"><span style="color: #AAAAAA;">CPU:</span> ${point.cpuCount} cores</div>
                 <div style="margin: 4px 0;"><span style="color: #AAAAAA;">Memory:</span> ${point.memory}</div>
                 <div style="margin: 4px 0;"><span style="color: #AAAAAA;">Storage:</span> ${point.storage}</div>
-                <div style="margin: 4px 0;"><span style="color: #AAAAAA;">Uptime:</span> ${point.uptime}</div>
+                <!-- <div style="margin: 4px 0;"><span style="color: #AAAAAA;">Uptime:</span> ${point.uptime}</div> -->
               </div>
             </div>
           `;
