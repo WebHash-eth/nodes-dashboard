@@ -106,7 +106,7 @@ document.addEventListener('DOMContentLoaded', function() {
       // Add click event for points
       world.onPointClick(point => {
         if (point) {
-          alert(`Node Details:\nHostname: ${point.hostname}\nLocation: ${point.location}\nCPU: ${point.cpuCount} cores\nMemory: ${point.memory}\nStorage: ${point.storage}\nUptime: ${point.uptime}`);
+          alert(`Node Details:\nHostname: ${point.hostname}\nLocation: ${point.location}\nCPU: ${point.cpuCount} cores\nMemory: ${point.memory}\nStorage: ${point.storage}\n`);
         }
       });
       
