@@ -68,7 +68,6 @@ document.addEventListener('DOMContentLoaded', function() {
           nodeId: node.id,
           hostname: node.hostname,
           memory: formattedMemory,
-          uptime: node.uptime,
           storage: formattedStorage,
           cpuCount: node.cpuCount || 0,
           location: `${node.location.city}, ${node.location.country}`
