@@ -11,6 +11,15 @@
     <script src="https://cdn.jsdelivr.net/npm/globe.gl@2.28.4/dist/globe.gl.min.js"></script>
     <!-- Feather Icons for navigation -->
     <script src="https://cdn.jsdelivr.net/npm/feather-icons/dist/feather.min.js"></script>
+    
+    <!-- Twitter conversion tracking base code -->
+    <script>
+    !function(e,t,n,s,u,a){e.twq||(s=e.twq=function(){s.exe?s.exe.apply(s,arguments):s.queue.push(arguments);
+    },s.version='1.1',s.queue=[],u=t.createElement(n),u.async=!0,u.src='https://static.ads-twitter.com/uwt.js',
+    a=t.getElementsByTagName(n)[0],a.parentNode.insertBefore(u,a))}(window,document,'script');
+    twq('config','pb3r6');
+    </script>
+    <!-- End Twitter conversion tracking base code -->
 </head>
 <body>
     <div class="app-container">
@@ -38,6 +47,10 @@
                 <button class="mobile-menu-button" id="menuToggle">MENU</button>
 
                 <div class="nav-right">
+                    <a href="https://node-setup.webhash.com/" class="nav-button" target="_blank">
+                        Run a Node
+                        <i data-feather="arrow-up-right" class="icon-arrow"></i>
+                    </a>
                     <a href="https://pro.webhash.com" class="nav-button" target="_blank">
                         Webhash Pro
                         <i data-feather="arrow-up-right" class="icon-arrow"></i>
@@ -64,11 +77,15 @@
                         Ecosystem
                         <i data-feather="lock" class="icon-lock"></i>
                     </a> -->
-                    <a href="#" class="mobile-nav-button">
+                    <a href="https://node-setup.webhash.com/" class="mobile-nav-button" target="_blank">
+                        Run a Node
+                        <i data-feather="arrow-right" class="icon-arrow"></i>
+                    </a>
+                    <a href="https://pro.webhash.com" class="mobile-nav-button" target="_blank">
                         Webhash Pro
                         <i data-feather="arrow-right" class="icon-arrow"></i>
                     </a>
-                    <a href="#" class="mobile-nav-button">
+                    <a href="https://app.webhash.com" class="mobile-nav-button" target="_blank">
                         No-Code Dev
                         <i data-feather="arrow-right" class="icon-arrow"></i>
                     </a>
