@@ -61,8 +61,8 @@ app.get('/api/stats', async (req, res) => {
     const roundedStorageTB = Math.round(totalStorageTB * 100) / 100;
     
     // Static values as requested
-    const sitesHosted = 11541;
-    const storageConsumedTB = 0.9; // 450 GB converted to TB
+    const sitesHosted = 12226;
+    const storageConsumedTB = 1.2; // 450 GB converted to TB
     
     console.log('Stats calculation:', {
       totalCPUs,
